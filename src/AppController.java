@@ -91,6 +91,7 @@ public class AppController {
             Question.setBudget("100-");
         }else {
             Question.setBudget("100+");
+            //som tu
         }
     }
     @FXML
