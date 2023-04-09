@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="254.0" prefWidth="526.0" style="-fx-background-color: #7156dd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.Map1">
+<AnchorPane prefHeight="254.0" prefWidth="526.0" style="-fx-background-color: #7156dd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TourController">
    <children>
       <ImageView fitHeight="276.0" fitWidth="512.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
          <image>
