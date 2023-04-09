@@ -30,12 +30,13 @@ public class LogInController {
         stage.close();
 
     }
+
     public void LoginButton_clicked(ActionEvent actionEvent) throws IOException{
 
         String user, pass;
         pass = password_field.getText();
         user = login_field.getText();
-        if(user.equals("admin") && pass.equals("admin")) {
+        if(user.equals("user") && pass.equals("user")) {
 
             LogInButton.getScene().getWindow().hide();
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/app.fxml")));

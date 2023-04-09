@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TourController">
+    <children>
+        <AnchorPane fx:id="Questions" layoutX="207.0" prefHeight="600.0" prefWidth="685.0" style="-fx-background-color: #7156dd;">
+            <children>
+                <ScrollPane prefHeight="600.0" prefWidth="686.0">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="1106.0" prefWidth="687.0" style="-fx-background-color: #7156dd;">
+                     <children>
+                        <ImageView fitHeight="320.0" fitWidth="309.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/route1.png" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="327.0" layoutY="14.0" prefHeight="77.0" prefWidth="328.0">
+                           <children>
+                              <Label prefHeight="29.0" prefWidth="337.0" text="Route number 1.">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="30.0" prefWidth="344.0" text="Along the landscape to the museum">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="14.0" layoutY="306.0" prefHeight="402.0" prefWidth="315.0">
+                           <children>
+                              <Label prefHeight="36.0" prefWidth="209.0" text="1. Right coffeе bar" />
+                              <Label prefHeight="36.0" prefWidth="222.0" text="2.Monument to Anna Yaroslavna" />
+                              <Label prefHeight="36.0" prefWidth="188.0" text="3. Theater &quot;Actor&quot;" />
+                              <Label prefHeight="36.0" prefWidth="188.0" text="4. Grandmother Bakery" />
+                              <Label prefHeight="36.0" prefWidth="188.0" text="5. House with snakes and chestnuts" />
+                              <Label prefHeight="36.0" prefWidth="188.0" text="6. Square of Kyiv intellectuals" />
+                              <Label prefHeight="36.0" prefWidth="188.0" text="7. City-Zen cafe" />
+                              <Label prefHeight="36.0" prefWidth="188.0" text="8. Mini-sculpture &quot;Kyiv coffee&quot;" />
+                              <Label prefHeight="36.0" prefWidth="316.0" text="9. Ruins of the Church of the Tithes and Staraya Lipa" />
+                              <Label prefHeight="36.0" prefWidth="314.0" text="10. Museum of the History of Ukraine" />
+                              <Label prefHeight="36.0" prefWidth="314.0" text="and Views of Podil" />
+                           </children>
+                        </VBox>
+                        <TextArea layoutX="321.0" layoutY="92.0" prefHeight="167.0" prefWidth="366.0" style="-fx-background-color: #7156dd;" text="I want to start our walking route “Along the Landscape to &#10;the Museum” from Lvovskaya Square and end on &#10;Starokievskaya Hill. I live nearby and love this area with &#10;all my heart. I like absolutely everything here. The route &#10;includes one coffee house, one monument, one theater, &#10;one bakery, one cafe, one house with beautiful &#10;architecture, one square, one Shukai sculpture, one alley, &#10;one ruins, one linden tree, one museum, an endless &#10;view of Podil." />
+                        <VBox layoutX="331.0" layoutY="304.0" prefHeight="728.0" prefWidth="350.0">
+                           <children>
+                              <Label prefHeight="24.0" prefWidth="354.0" text="Right coffeе bar">
+                                 <font>
+                                    <Font name="Segoe Print" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="24.0" prefWidth="354.0" text="Order here nightly oatmeal and any coffee." />
+                              <Label prefHeight="24.0" prefWidth="354.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="24.0" prefWidth="354.0" text="Theater &quot;Actor&quot;">
+                                 <font>
+                                    <Font name="Segoe Print" size="17.0" />
+                                 </font>
+                              </Label>
+                              <TextArea prefHeight="110.0" prefWidth="370.0" text="Schedule a visit here. I was here at the performances &#10;of  &quot;Megera&quot; with Alexei Vertinsky and Artyom Yemtsov, &#10;at creative evening of Ada Rogovtseva, at the &#10;performance  &quot;Shid-Zakhid&quot;, which was attended &#10;by Oleg Sentsov." />
+                              <Label prefHeight="24.0" prefWidth="354.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="24.0" prefWidth="354.0" text="Grandmother Bakery">
+                                 <font>
+                                    <Font name="Segoe Print" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="24.0" prefWidth="354.0" text="Order your grandma here!" />
+                              <Label prefHeight="24.0" prefWidth="354.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="24.0" prefWidth="354.0" text="House with snakes and chestnuts">
+                                 <font>
+                                    <Font name="Segoe Print" size="17.0" />
+                                 </font>
+                              </Label>
+                              <TextArea prefHeight="256.0" prefWidth="350.0" text="This house on Bolshaya Zhitomirskaya, like many &#10;beautiful houses in Kyiv, used to function as a &#10;mini-hotel (it was called a &quot;profitable house&quot;). It was &#10;built in 1911-1912 by the architect Ignatius Ledohovsky, &#10;who, along with Gorodetsky, was called one of the &#10;fathers of Kyiv modernity. It was built by order of the &#10;owner of the site, S. Chokolova, who belonged to a &#10;well-known family in Kyiv. The house received from &#10;the people of Kiev the name &quot;house with snakes and &#10;chestnuts&quot; or simply &quot;house with snakes&quot; because &#10;of the corresponding sculptural compositions: &#10;snakes supporting the balcony on the facade and &#10;chestnut leaf ornaments on the stucco molding. &#10;The house must be restored. We wait." />
+                              <Label prefHeight="24.0" prefWidth="354.0">
+                                 <font>
+                                    <Font name="Segoe Print" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="24.0" prefWidth="354.0" text="City-Zen cafe">
+                                 <font>
+                                    <Font name="Segoe Print" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="24.0" prefWidth="354.0" text="Dine here with shrimp pasta and coffee Kiev" />
+                           </children>
+                        </VBox>
+                     </children>
+                        </AnchorPane>
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+        <VBox prefHeight="600.0" prefWidth="207.0" style="-fx-background-color: #3f2b63;">
+            <children>
+                <Pane prefHeight="121.0" prefWidth="207.0">
+                    <children>
+                        <ImageView fitHeight="122.0" fitWidth="207.0" layoutX="43.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/kyiv.png" />
+                            </image>
+                        </ImageView>
+                    </children></Pane>
+                <Button fx:id="btn_question" alignment="BOTTOM_LEFT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnQuestions_clicked" prefHeight="68.0" prefWidth="207.0" style="-fx-background-color: #3f2b63;" text="Questions" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/question.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btn_tour" alignment="BOTTOM_LEFT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnTour_clicked" prefHeight="68.0" prefWidth="207.0" style="-fx-background-color: #3f2b63;" text="Tours" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/tour.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btn_maps" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#btnMaps_clicked" prefHeight="68.0" prefWidth="207.0" style="-fx-background-color: #3f2b63;" text="    Map" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/mapLogo.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btn_user" alignment="BOTTOM_LEFT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnUser_clicked" prefHeight="68.0" prefWidth="207.0" style="-fx-background-color: #3f2b63;" text="User" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/user.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btn_exit" alignment="BOTTOM_LEFT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnExit_clicked" prefHeight="68.0" prefWidth="207.0" style="-fx-background-color: #3f2b63;" text="Exit" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/exit.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,7 +1,7 @@
 package Classes;
 
 
-public class questions {
+public class Tours {
 
     String Time;
     boolean Hotel;
@@ -10,7 +10,7 @@ public class questions {
     boolean Art;
     boolean Historycal;
     boolean parks;
-    public questions(){}
+    public Tours(){}
 
 
     public void setTime(String time) {
@@ -29,19 +29,16 @@ public class questions {
         Cuisine = cuisine;
     }
 
-    public void setMuseums(boolean art) {
+    public void setArt(boolean art) {
         this.Art = art;
     }
 
-    public void setHolyPlace(boolean history) {
+    public void setHistory(boolean history) {
         this.Historycal = history;
     }
 
-    public void setParks(boolean parks) {
-        this.parks = parks;
-    }
 
-    public questions(String time, boolean hotel, String budget, String cuisine, boolean Art, boolean history) {
+    public Tours(String time, boolean hotel, String budget, String cuisine, boolean Art, boolean history) {
         Time = time;
         Hotel = hotel;
         Budget = budget;

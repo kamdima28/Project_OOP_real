@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TourController">
+    <children>
+        <AnchorPane fx:id="Questions" layoutX="207.0" prefHeight="600.0" prefWidth="685.0" style="-fx-background-color: #7156dd;">
+         <children>
+            <ScrollPane prefHeight="600.0" prefWidth="686.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="707.0" prefWidth="682.0" style="-fx-background-color: #7156dd;">
+                     <children>
+                        <Label layoutX="246.0" layoutY="14.0" prefHeight="51.0" prefWidth="184.0" text="Your routes" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane fx:id="Route1" layoutX="14.0" layoutY="65.0" prefHeight="393.0" prefWidth="305.0">
+                           <children>
+                              <ImageView cache="true" fitHeight="228.0" fitWidth="327.0" opacity="0.8" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/route1.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="4.0" layoutY="236.0" prefHeight="26.0" prefWidth="122.0" text="Route #1">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="4.0" layoutY="272.0" prefHeight="36.0" prefWidth="296.0" text="Along the landscape to the museum">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btn_details1" layoutX="14.0" layoutY="349.0" mnemonicParsing="false" onAction="#btn_details1_clicked" text="Details" textFill="WHITE" />
+                              <Button fx:id="btn_map1" layoutX="80.0" layoutY="349.0" mnemonicParsing="false" onAction="#btnMap1_clicked" style="-fx-background-color: #7156dd;" text="Maps" />
+                           </children>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </AnchorPane>
+                        <AnchorPane fx:id="Route2" layoutX="338.0" layoutY="65.0" prefHeight="393.0" prefWidth="305.0">
+                           <children>
+                              <ImageView fitHeight="228.0" fitWidth="327.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/route2.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="4.0" layoutY="236.0" prefHeight="26.0" prefWidth="122.0" text="Route #2">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="4.0" layoutY="272.0" prefHeight="36.0" prefWidth="296.0" text="Streets of Maidan">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="14.0" layoutY="349.0" mnemonicParsing="false" text="Details" />
+                              <Button layoutX="80.0" layoutY="349.0" mnemonicParsing="false" style="-fx-background-color: #7156dd;" text="Maps" />
+                           </children>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </AnchorPane>
+                        <AnchorPane layoutX="7.0" layoutY="495.0" prefHeight="393.0" prefWidth="305.0">
+                           <children>
+                              <ImageView cache="true" fitHeight="229.0" fitWidth="324.0" layoutY="-1.0" opacity="0.8" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/route1.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="4.0" layoutY="236.0" prefHeight="26.0" prefWidth="122.0" text="Route #1">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="4.0" layoutY="272.0" prefHeight="36.0" prefWidth="296.0" text="Along the landscape to the museum">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btn_details11" blendMode="ADD" cacheShape="false" depthTest="DISABLE" focusTraversable="false" layoutX="14.0" layoutY="349.0" mnemonicParsing="false" onAction="#btn_details1_clicked" scaleShape="false" text="Details" textFill="#ffd4d4" textOverrun="CLIP" />
+                              <Button layoutX="80.0" layoutY="349.0" mnemonicParsing="false" style="-fx-background-color: #7156dd;" text="Maps" />
+                           </children>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+        </AnchorPane>
+        <VBox prefHeight="600.0" prefWidth="207.0" style="-fx-background-color: #3f2b63;">
+            <children>
+                <Pane prefHeight="121.0" prefWidth="207.0">
+               <children>
+                  <ImageView fitHeight="122.0" fitWidth="207.0" layoutX="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/kyiv.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+                <Button fx:id="btn_question" alignment="BOTTOM_LEFT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnQuestions_clicked" prefHeight="68.0" prefWidth="207.0" style="-fx-background-color: #3f2b63;" text="Questions" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/question.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btn_tour" alignment="BOTTOM_LEFT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnTour_clicked" prefHeight="68.0" prefWidth="207.0" style="-fx-background-color: #3f2b63;" text="Tours" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/tour.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btn_maps" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#btnMaps_clicked" prefHeight="68.0" prefWidth="207.0" style="-fx-background-color: #3f2b63;" text="    Map" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/mapLogo.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btn_user" alignment="BOTTOM_LEFT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnUser_clicked" prefHeight="68.0" prefWidth="207.0" style="-fx-background-color: #3f2b63;" text="User" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/user.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btn_exit" alignment="BOTTOM_LEFT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnExit_clicked" prefHeight="68.0" prefWidth="207.0" style="-fx-background-color: #3f2b63;" text="Exit" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/exit.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
