@@ -164,7 +164,7 @@
                     <graphic>
                         <ImageView fitHeight="43.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../assets/exit.png" />
+                                <Image  url="@../assets/exit.png" />
                             </image>
                         </ImageView>
                     </graphic>

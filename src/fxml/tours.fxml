@@ -26,7 +26,7 @@
                         </Label>
                         <AnchorPane fx:id="Route1" layoutX="14.0" layoutY="65.0" prefHeight="393.0" prefWidth="305.0">
                            <children>
-                              <ImageView cache="true" fitHeight="228.0" fitWidth="327.0" opacity="0.8" preserveRatio="true">
+                              <ImageView  cache="true" fitHeight="228.0" fitWidth="327.0" opacity="0.8" preserveRatio="true">
                                  <image>
                                     <Image url="@../assets/route1.png" />
                                  </image>
