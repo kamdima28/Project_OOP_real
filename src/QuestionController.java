@@ -12,8 +12,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -79,11 +77,14 @@ public class QuestionController {
 
     @FXML
     void btnExit_clicked(ActionEvent event) {
+
         Stage stage = (Stage) btn_exit.getScene().getWindow();
         stage.close();
+
     }
     @FXML
     void btnMaps_clicked(ActionEvent event) throws IOException {
+
     }
 
     @FXML
@@ -97,11 +98,22 @@ public class QuestionController {
         scene.setFill(Color.TRANSPARENT);
         mainStage.setScene(scene);
         mainStage.show();
+
+    }
+    @FXML
+    void btnUser_clicked(ActionEvent event) throws IOException {
+
+        btn_user.getScene().getWindow().hide();
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/user.fxml")));
+        Stage mainStage = new Stage();
+        mainStage.initStyle(StageStyle.TRANSPARENT);
+        Scene scene = new Scene(root);
+        scene.setFill(Color.TRANSPARENT);
+        mainStage.setScene(scene);
+        mainStage.show();
+
     }
 
-    @FXML
-    void btnUser_clicked(ActionEvent event) {
-    }
     boolean time = false;
     boolean cuisine = false;
     boolean Budget = false;
@@ -122,12 +134,7 @@ public class QuestionController {
                 Budget = true;
             }
             JOptionPane.showMessageDialog(null, "Your data was saved!");
-
         }
-
-
-
-
     }
     @FXML
     void initialize() {

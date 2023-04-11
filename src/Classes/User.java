@@ -1,11 +1,15 @@
 package Classes;
 
 public class User {
-    String login = "user";
-    String password = "user";
+    public String login;
+    public String password;
 
     public User(String login, String  password) {
         this.login = login;
         this.password = password;
     }
+
+    public User() {
+    }
+
 }
