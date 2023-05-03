@@ -2,6 +2,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
+
+import ChangingScene.ChangingScene;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +15,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class UserController {
+public class UserController extends ChangingScene {
 
     @FXML
     private ResourceBundle resources;
@@ -47,26 +49,14 @@ public class UserController {
     @FXML
     void btnTourMap_clicked(ActionEvent event) throws IOException {
         btn_tourMap.getScene().getWindow().hide();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/tours.fxml")));
-        Stage mainStage = new Stage();
-        mainStage.initStyle(StageStyle.TRANSPARENT);
-        Scene scene = new Scene(root);
-        scene.setFill(Color.TRANSPARENT);
-        mainStage.setScene(scene);
-        mainStage.show();
+        changingSceneToTours();
     }
 
     @FXML
     void btnAcount_clicked(ActionEvent event) throws IOException {
 
         btn_acount.getScene().getWindow().hide();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/LogIn.fxml")));
-        Stage mainStage = new Stage();
-        mainStage.initStyle(StageStyle.TRANSPARENT);
-        Scene scene = new Scene(root);
-        scene.setFill(Color.TRANSPARENT);
-        mainStage.setScene(scene);
-        mainStage.show();
+        changingSceneToLogIn();
     }
 
     @FXML
@@ -88,25 +78,13 @@ public class UserController {
     @FXML
     void btnTour_clicked(ActionEvent event) throws IOException {
         btn_maps.getScene().getWindow().hide();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/tours.fxml")));
-        Stage mainStage = new Stage();
-        mainStage.initStyle(StageStyle.TRANSPARENT);
-        Scene scene = new Scene(root);
-        scene.setFill(Color.TRANSPARENT);
-        mainStage.setScene(scene);
-        mainStage.show();
+        changingSceneToTours();
     }
 
     @FXML
     void btnUser_clicked(ActionEvent event) throws IOException {
         btn_user.getScene().getWindow().hide();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/user.fxml")));
-        Stage mainStage = new Stage();
-        mainStage.initStyle(StageStyle.TRANSPARENT);
-        Scene scene = new Scene(root);
-        scene.setFill(Color.TRANSPARENT);
-        mainStage.setScene(scene);
-        mainStage.show();
+        changingSceneToUser();
     }
 
 }

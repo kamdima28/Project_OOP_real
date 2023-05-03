@@ -1,4 +1,4 @@
-
+import ChangingScene.ChangingScene;
 import Classes.Tours;
 
 import java.io.IOException;
@@ -20,7 +20,7 @@ import javafx.stage.StageStyle;
 import javax.swing.*;
 
 
-public class QuestionController {
+public class QuestionController extends ChangingScene {
     Tours Question = new Tours();
     @FXML
     private ResourceBundle resources;
@@ -91,26 +91,14 @@ public class QuestionController {
     void btnTour_clicked(ActionEvent event) throws IOException {
 
         btn_maps.getScene().getWindow().hide();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/tours.fxml")));
-        Stage mainStage = new Stage();
-        mainStage.initStyle(StageStyle.TRANSPARENT);
-        Scene scene = new Scene(root);
-        scene.setFill(Color.TRANSPARENT);
-        mainStage.setScene(scene);
-        mainStage.show();
+        changingSceneToTours();
 
     }
     @FXML
     void btnUser_clicked(ActionEvent event) throws IOException {
 
         btn_user.getScene().getWindow().hide();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/user.fxml")));
-        Stage mainStage = new Stage();
-        mainStage.initStyle(StageStyle.TRANSPARENT);
-        Scene scene = new Scene(root);
-        scene.setFill(Color.TRANSPARENT);
-        mainStage.setScene(scene);
-        mainStage.show();
+        changingSceneToUser();
 
     }
 

@@ -3,6 +3,7 @@ import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
+import ChangingScene.ChangingScene;
 import Classes.Admin;
 import Classes.Student;
 import Classes.User;
@@ -17,7 +18,7 @@ import javafx.stage.StageStyle;
 
 import javax.swing.*;
 
-public class LogInController {
+public class LogInController extends ChangingScene {
     User user = new User("user", "user");
     Student student = new Student("student", "student");
     Admin admin = new Admin("admin", "admin");
@@ -31,8 +32,6 @@ public class LogInController {
     private TextField login_field;
     @FXML
     private TextField password_field;
-    @FXML
-    private Button btn_user;
 
     public void CanselButton_clicked(ActionEvent actionEvent) throws IOException {
 
@@ -50,13 +49,7 @@ public class LogInController {
         if(Login.equals(user.login) && Pass.equals(user.password)){
 
             LogInButton.getScene().getWindow().hide();
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/app.fxml")));
-            Stage mainStage = new Stage();
-            mainStage.initStyle(StageStyle.TRANSPARENT);
-            Scene scene = new Scene(root);
-            scene.setFill(Color.TRANSPARENT);
-            mainStage.setScene(scene);
-            mainStage.show();
+            changingSceneToApp();
 
         }else if(Login.equals(student.login) && Pass.equals(student.password)){
 
@@ -78,11 +71,7 @@ public class LogInController {
     public void RegisterButton_clicked(ActionEvent actionEvent) throws IOException {
 
         RegisterButton.getScene().getWindow().hide();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/register.fxml")));
-        Stage mainStage = new Stage();
-        Scene scene = new Scene(root);
-        mainStage.setScene(scene);
-        mainStage.show();
+        changingSceneToReg();
 
     }
 }
