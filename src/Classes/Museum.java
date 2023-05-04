@@ -3,6 +3,7 @@ package Classes;
 public class Museum extends TouristAttraction{
     private String exhibit;
 
+
     public Museum(String name, String address, String description, int entryFee, String exhibit) {
         super(name, address, description, entryFee);
         this.exhibit = exhibit;

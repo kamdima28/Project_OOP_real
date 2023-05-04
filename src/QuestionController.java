@@ -1,26 +1,18 @@
 import ChangingScene.ChangingScene;
 import Classes.Tours;
-
 import java.io.IOException;
 import java.net.URL;
-import java.util.Objects;
 import java.util.ResourceBundle;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 import javax.swing.*;
 
 
-public class QuestionController extends ChangingScene {
+public class QuestionController extends ChangingScene{
     Tours Question = new Tours();
     @FXML
     private ResourceBundle resources;
@@ -101,7 +93,6 @@ public class QuestionController extends ChangingScene {
         changingSceneToUser();
 
     }
-
     boolean time = false;
     boolean cuisine = false;
     boolean Budget = false;

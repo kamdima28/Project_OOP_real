@@ -2,10 +2,10 @@ package Classes;
 
 public class Place {
     private String name;
-    private String address;
+    private Address address;
     private String description;
 
-    public Place(String name, String address, String description) {
+    public Place(String name, Address address, String description) {
         this.name = name;
         this.address = address;
         this.description = description;
@@ -15,7 +15,7 @@ public class Place {
         return name;
     }
 
-    public String getAddress() {
+    public Address getAddress() {
         return address;
     }
 
@@ -24,7 +24,9 @@ public class Place {
     }
 
     public void printDetails() {
-
+        System.out.println("Name: " + name);
+        System.out.println("Address: " + address.getStreet() + ", " + address.getCity());
+        System.out.println("Description: " + description);
     }
 }
 

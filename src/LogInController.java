@@ -1,21 +1,12 @@
 import java.io.IOException;
-import java.net.URL;
-import java.util.Objects;
-import java.util.ResourceBundle;
-
 import ChangingScene.ChangingScene;
 import Classes.Admin;
 import Classes.Student;
 import Classes.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.*;
 import javafx.scene.control.*;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-
 import javax.swing.*;
 
 public class LogInController extends ChangingScene {
@@ -39,7 +30,6 @@ public class LogInController extends ChangingScene {
         stage.close();
 
     }
-
     public void LoginButton_clicked(ActionEvent actionEvent) throws IOException{
 
         String Login, Pass;
@@ -67,7 +57,6 @@ public class LogInController extends ChangingScene {
 
         }
     }
-
     public void RegisterButton_clicked(ActionEvent actionEvent) throws IOException {
 
         RegisterButton.getScene().getWindow().hide();
