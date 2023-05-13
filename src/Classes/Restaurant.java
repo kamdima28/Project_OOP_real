@@ -8,6 +8,12 @@ public class Restaurant extends Place{
         super(name, address, description);
         this.cuisineType = cuisineType;
     }
+
+    @Override
+    public void printOpeningHours() {
+
+    }
+
     public String getCuisineType() {
         return cuisineType;
     }

@@ -1,15 +1,21 @@
 import java.io.IOException;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
-import ChangingScene.ChangingScene;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
-public class SignUpController extends ChangingScene {
+public class SignUpController{
 
     @FXML
     private ResourceBundle resources;
@@ -44,7 +50,11 @@ public class SignUpController extends ChangingScene {
     @FXML
     public void LoginButton_clicked(ActionEvent actionEvent) throws IOException {
         btn_LogIn.getScene().getWindow().hide();
-        changingSceneToLogIn();
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/LogIn.fxml")));
+        Stage mainStage = new Stage();
+        mainStage.initStyle(StageStyle.UNDECORATED);
+        mainStage.setScene(new Scene(root));
+        mainStage.show();
     }
 
 }

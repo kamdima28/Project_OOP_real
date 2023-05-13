@@ -1,10 +1,10 @@
 package Classes;
 
-public class Park extends TouristAttraction{
+public class Park extends Place{
     private int area;
 
-    public Park(String name, String address, String description, int entryFee, int area) {
-        super(name, address, description, entryFee);
+    public Park(String name, Address address, String description, int area) {
+        super(name, address, description);
         this.area = area;
     }
 

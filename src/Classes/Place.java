@@ -1,6 +1,9 @@
 package Classes;
 
-public class Place {
+import javax.swing.*;
+import java.io.*;
+
+public abstract class Place {
     private String name;
     private Address address;
     private String description;
@@ -23,10 +26,7 @@ public class Place {
         return description;
     }
 
-    public void printDetails() {
-        System.out.println("Name: " + name);
-        System.out.println("Address: " + address.getStreet() + ", " + address.getCity());
-        System.out.println("Description: " + description);
-    }
+
+    public abstract void printOpeningHours();
 }
 

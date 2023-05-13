@@ -1,13 +1,14 @@
 package Classes;
 
-public class Museum extends TouristAttraction{
+public class Museum extends Place{
     private String exhibit;
 
 
-    public Museum(String name, String address, String description, int entryFee, String exhibit) {
-        super(name, address, description, entryFee);
+    public Museum(String name, Address address, String description, int entryFee) {
+        super(name, address, description);
         this.exhibit = exhibit;
     }
+
 
     public String getExhibit() {
         return exhibit;

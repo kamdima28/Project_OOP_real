@@ -1,15 +1,24 @@
 import java.io.IOException;
-import ChangingScene.ChangingScene;
+import java.util.Objects;
+
+
 import Classes.Admin;
 import Classes.Student;
 import Classes.User;
+import Classes.UserException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javax.swing.*;
+import Classes.UserException;
+import javafx.stage.StageStyle;
 
-public class LogInController extends ChangingScene {
+public class LogInController {
     User user = new User("user", "user");
     Student student = new Student("student", "student");
     Admin admin = new Admin("admin", "admin");
@@ -39,7 +48,13 @@ public class LogInController extends ChangingScene {
         if(Login.equals(user.login) && Pass.equals(user.password)){
 
             LogInButton.getScene().getWindow().hide();
-            changingSceneToApp();
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/question.fxml")));
+            Stage mainStage = new Stage();
+            mainStage.initStyle(StageStyle.TRANSPARENT);
+            Scene scene = new Scene(root);
+            scene.setFill(Color.TRANSPARENT);
+            mainStage.setScene(scene);
+            mainStage.show();
 
         }else if(Login.equals(student.login) && Pass.equals(student.password)){
 
@@ -60,7 +75,11 @@ public class LogInController extends ChangingScene {
     public void RegisterButton_clicked(ActionEvent actionEvent) throws IOException {
 
         RegisterButton.getScene().getWindow().hide();
-        changingSceneToReg();
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/register.fxml")));
+        Stage mainStage = new Stage();
+        Scene scene = new Scene(root);
+        mainStage.setScene(scene);
+        mainStage.show();
 
     }
 }

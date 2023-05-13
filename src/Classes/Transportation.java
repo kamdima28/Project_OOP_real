@@ -1,7 +1,12 @@
 package Classes;
 
 public interface Transportation {
-    public void start();
-    public void stop();
+    default void start() {
+        System.out.println("Starting transportation");
+    }
+
+    default void stop(){
+        System.out.println("Stopping transportation");
+    }
     public void transportPassengers();
 }

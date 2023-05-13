@@ -1,12 +1,12 @@
 package Classes;
 
-public class Address {
+public class Address <T>{
     private String street;
-    private String city;
+    T city;
 
-    public Address(String street, String city) {
+
+    public Address(String street) {
         this.street = street;
-        this.city = city;
     }
 
     public String getStreet() {
@@ -14,7 +14,7 @@ public class Address {
     }
 
     public String getCity() {
-        return city;
+        return (String) city;
     }
 
 

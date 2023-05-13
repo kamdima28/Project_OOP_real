@@ -1,24 +1,47 @@
 package Classes;
 
-public class Route implements Transportation{
-    private String name;
+import javafx.scene.control.TextField;
 
-    public Route(String name) {
-        this.name = name;
+import javax.swing.*;
+import java.io.*;
+
+public class Route {
+
+
+    int days;
+    String budget;
+    String Cuisine;
+    String places;
+
+    public int getDays() {
+        return days;
     }
 
-    @Override
-    public void start() {
-        System.out.println(name + " has started.");
+    public String getBudget() {
+        return budget;
     }
 
-    @Override
-    public void stop() {
-        System.out.println(name + " has stopped.");
+    public String getCuisine() {
+        return Cuisine;
     }
 
-    @Override
-    public void transportPassengers() {
-        System.out.println(name + " is transporting passengers.");
+    public String getPlaces() {
+        return places;
     }
+
+
+
+
+    public Route(int days, String budget, String Cuisine, String places){
+        this.days = days;
+        this.budget = budget;
+        this.Cuisine = Cuisine;
+        this.places = places;
+
+    }
+    public Route(){
+
+    }
+
+
 }

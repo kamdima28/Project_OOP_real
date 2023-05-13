@@ -72,58 +72,58 @@
                 </Button>
             </children>
         </VBox>
-      <Label layoutX="237.0" layoutY="34.0" prefHeight="29.0" prefWidth="227.0" text="How many people will be?" />
-      <TextField layoutX="416.0" layoutY="36.0" />
-      <Button fx:id="add_btn" layoutX="649.0" layoutY="33.0" mnemonicParsing="false" onAction="#addBtn_clicked" text="Add" />
-      <Accordion />
-      <Label layoutX="221.0" layoutY="131.0" prefHeight="42.0" prefWidth="285.0" text="Period of stay in the city:">
-         <font>
-            <Font size="21.0" />
-         </font>
-      </Label>
-      <Label layoutX="221.0" layoutY="300.0" prefHeight="42.0" prefWidth="325.0" text="What would you like to visit?">
-         <font>
-            <Font name="Segoe Print" size="21.0" />
-         </font>
-      </Label>
-      <RadioButton fx:id="btn_Art" layoutX="221.0" layoutY="359.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="180.0" text="Artistic places">
-         <font>
-            <Font size="21.0" />
-         </font>
-      </RadioButton>
-      <Label layoutX="221.0" layoutY="182.0" prefHeight="42.0" prefWidth="285.0" text="What is your budget?">
-         <font>
-            <Font size="21.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="42.0" fitWidth="51.0" layoutX="677.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/eur.png" />
-         </image>
-      </ImageView>
-      <TextField fx:id="budget_field" layoutX="507.0" layoutY="190.0" />
-      <Label layoutX="221.0" layoutY="244.0" prefHeight="42.0" prefWidth="384.0" text="What kind of cuisine do you want?">
-         <font>
-            <Font name="Segoe Print" size="21.0" />
-         </font>
-      </Label>
-      <RadioButton fx:id="btn_UkrKitchen" layoutX="623.0" layoutY="249.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="122.0" text="Ukraine">
-         <font>
-            <Font size="21.0" />
-         </font>
-      </RadioButton>
-      <RadioButton fx:id="btn_EurKitchen" layoutX="745.0" layoutY="249.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="122.0" text="Europe">
-         <font>
-            <Font size="21.0" />
-         </font>
-      </RadioButton>
-      <RadioButton fx:id="btn_Historical" layoutX="416.0" layoutY="359.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="207.0" text=" Historical places">
-         <font>
-            <Font size="21.0" />
-         </font>
-      </RadioButton>
-      <Button fx:id="btn_Save" layoutX="768.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#btn_Save_clicked" text="Save" />
-      <DatePicker fx:id="fromDate" layoutX="518.0" layoutY="140.0" prefHeight="26.0" prefWidth="122.0" />
-      <DatePicker fx:id="toDate" layoutX="684.0" layoutY="140.0" prefHeight="26.0" prefWidth="122.0" />
+        <Label layoutX="237.0" layoutY="34.0" prefHeight="29.0" prefWidth="227.0" text="How many people will be?" />
+        <TextField layoutX="416.0" layoutY="36.0" />
+        <Button fx:id="add_btn" layoutX="649.0" layoutY="33.0" mnemonicParsing="false" onAction="#addBtn_clicked" text="Add" />
+        <Accordion />
+        <Label layoutX="221.0" layoutY="131.0" prefHeight="42.0" prefWidth="285.0" text="Period of stay in the city:">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="221.0" layoutY="300.0" prefHeight="42.0" prefWidth="325.0" text="What would you like to visit?">
+            <font>
+                <Font name="Segoe Print" size="21.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="btn_Art" layoutX="221.0" layoutY="359.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="180.0" text="Artistic places">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </RadioButton>
+        <Label layoutX="221.0" layoutY="182.0" prefHeight="42.0" prefWidth="285.0" text="What is your budget?">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="42.0" fitWidth="51.0" layoutX="677.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/eur.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="budget_field" layoutX="507.0" layoutY="190.0" />
+        <Label layoutX="221.0" layoutY="244.0" prefHeight="42.0" prefWidth="384.0" text="What kind of cuisine do you want?">
+            <font>
+                <Font name="Segoe Print" size="21.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="btn_UkrKitchen" layoutX="623.0" layoutY="249.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="122.0" text="Ukraine">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="btn_EurKitchen" layoutX="745.0" layoutY="249.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="122.0" text="Europe">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="btn_Historical" layoutX="416.0" layoutY="359.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="207.0" text=" Historical places">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </RadioButton>
+        <Button fx:id="btn_Save" layoutX="768.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#btn_Save_clicked" text="Save" />
+        <DatePicker fx:id="fromDate" layoutX="518.0" layoutY="140.0" prefHeight="26.0" prefWidth="122.0" />
+        <DatePicker fx:id="toDate" layoutX="684.0" layoutY="140.0" prefHeight="26.0" prefWidth="122.0" />
     </children>
 </AnchorPane>
